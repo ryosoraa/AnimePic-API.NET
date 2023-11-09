@@ -12,16 +12,14 @@ namespace SFWAnimePic_API.NET.src.utils
             private String path = @"D:/playground/C#/SFWAnimePic-API.NET/src/Results/json/Results.json";
             public void write(String json)
             {
-                File.WriteAllText(json, path);
+                File.WriteAllText(path, json);
 /*                writer.WriteLine(json);
                 writer.Close();*/
             }
 
         public void handle()
         {
-            StreamWriter writer = File.AppendText(path);
-            writer.WriteLine("[]");
-            writer.Close();
+            File.WriteAllText(path, "[]");
         }
 
     }

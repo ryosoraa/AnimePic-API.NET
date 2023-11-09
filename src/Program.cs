@@ -8,14 +8,15 @@ internal class Program
 {
     private static async Task Main(string[] args)
     {
-        string url = "https://api.waifu.pics/many/sfw/waifu";
+        string url = "https://api.waifu.pics/many/nsfw/waifu";
         String path = @"D:/playground/C#/SFWAnimePic-API.NET/src/Results/json/Results.json";
         Writer writer = new Writer();
         List<String> results = new List<string>();
         writer.handle();
 
-        for (int i = 0; i <= 3; i++)
+        for (int i = 0; i < 334; i++)
         {
+            Thread.Sleep(1000);
             using (HttpClient client = new HttpClient())
             {
                 MultipartFormDataContent multipartContent = new MultipartFormDataContent();
