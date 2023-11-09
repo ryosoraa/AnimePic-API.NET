@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LSoh0xfZOvf4/kZfQ//3DeHOf3Oz5HtRx49EXZO3V9kdp1WSc/QaD+Bn3KDI1CnUJ1kW5POHchqPriMEChvniA==",
+  "success": true,
+  "projectFilePath": "D:\\playground\\C#\\SFWAnimePic-API.NET\\SFWAnimePic-API.NET.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\riodw\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

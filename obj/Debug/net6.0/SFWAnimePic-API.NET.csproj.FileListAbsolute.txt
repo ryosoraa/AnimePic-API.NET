@@ -1,0 +1,17 @@
+D:\playground\C#\SFWAnimePic-API.NET\bin\Debug\net6.0\SFWAnimePic-API.NET.exe
+D:\playground\C#\SFWAnimePic-API.NET\bin\Debug\net6.0\SFWAnimePic-API.NET.deps.json
+D:\playground\C#\SFWAnimePic-API.NET\bin\Debug\net6.0\SFWAnimePic-API.NET.runtimeconfig.json
+D:\playground\C#\SFWAnimePic-API.NET\bin\Debug\net6.0\SFWAnimePic-API.NET.dll
+D:\playground\C#\SFWAnimePic-API.NET\bin\Debug\net6.0\SFWAnimePic-API.NET.pdb
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\SFWAnimePic-API.NET.GeneratedMSBuildEditorConfig.editorconfig
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\SFWAnimePic-API.NET.AssemblyInfoInputs.cache
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\SFWAnimePic-API.NET.AssemblyInfo.cs
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\SFWAnimePic-API.NET.csproj.CoreCompileInputs.cache
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\SFWAnimePic-API.NET.dll
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\refint\SFWAnimePic-API.NET.dll
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\SFWAnimePic-API.NET.pdb
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\SFWAnimePic-API.NET.genruntimeconfig.cache
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\ref\SFWAnimePic-API.NET.dll
+D:\playground\C#\SFWAnimePic-API.NET\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\SFWAnimePic-API.NET.csproj.AssemblyReference.cache
+D:\playground\C#\SFWAnimePic-API.NET\obj\Debug\net6.0\SFWAnimePic-API.NET.csproj.CopyComplete
