@@ -9,9 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="src\API\" />
     <Folder Include="src\composer\" />
-    <Folder Include="src\Results\image\" />
   </ItemGroup>
 
   <ItemGroup>

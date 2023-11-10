@@ -9,17 +9,22 @@ namespace SFWAnimePic_API.NET.src.utils
 {
     internal class Writer
     {
-            private String path = @"D:/playground/C#/SFWAnimePic-API.NET/src/Results/json/Results.json";
-            public void write(String json)
+            public void write(String path,String json)
             {
                 File.WriteAllText(path, json);
 /*                writer.WriteLine(json);
                 writer.Close();*/
             }
 
-        public void handle()
+        public void handle(String path)
         {
-            File.WriteAllText(path, "[]");
+            try
+            {
+                File.WriteAllText(path, "[]");
+            } catch(Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
 
     }
