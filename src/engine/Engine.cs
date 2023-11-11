@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using SFWAnimePic_API.NET.src.API;
+using SFWAnimePic_API.NET.src.assets;
 using SFWAnimePic_API.NET.src.model;
 using SFWAnimePic_API.NET.src.utils;
 using System;
@@ -16,6 +17,7 @@ namespace SFWAnimePic_API.NET.src.engine
         private String path;
         private String url;
         private int many;
+        private static int x;
         public Engine(String path, String url, int many) {
 
             this.path = path;
@@ -32,8 +34,7 @@ namespace SFWAnimePic_API.NET.src.engine
             Writer writer = new Writer();
             Check check = new Check();
             Request request = new Request();
-
-            writer.handle(path);
+            Types types = new Types();
 
             for (int i = 0; i < many; i++)
             {
@@ -76,13 +77,25 @@ namespace SFWAnimePic_API.NET.src.engine
                         Console.WriteLine("HTTP POST request gagal dengan kode status: " + response.StatusCode);
                     }
                     Thread.Sleep(2000);
+
+                // RESPONSE CONSOLE
+                Console.WriteLine("Type : " + types.types[x]);
+                Console.WriteLine("Status : " + response.StatusCode);
+                Console.WriteLine("Date : " + response.Headers.Date);
+                Console.WriteLine("Version : " + response.Version);
+                Console.WriteLine();
+                
+                
                 
             }
 
             /* WRITE THE RESULTS INTO A JSON FILE */
             string result = JsonConvert.SerializeObject(results, Formatting.Indented);
-            writer.write(path, result);
-            Console.WriteLine(result);
+
+            writer.write(path, result, x);
+
+            Console.WriteLine("Write Success!");
+            x++;
         }
     }
 }

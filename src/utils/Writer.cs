@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
+using SFWAnimePic_API.NET.src.assets;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,23 +11,30 @@ namespace SFWAnimePic_API.NET.src.utils
 {
     internal class Writer
     {
-            public void write(String path,String json)
+        Paths paths = new Paths();
+        
+            public void write(String path,String json, int title)
             {
-                File.WriteAllText(path, json);
-/*                writer.WriteLine(json);
-                writer.Close();*/
+
+            File.WriteAllText($"{path}/{paths.path()[title]}", json);
+            
             }
 
         public void handle(String path)
         {
-            try
+            foreach (var one in paths.path())
             {
-                File.WriteAllText(path, "[]");
-            } catch(Exception e)
-            {
-                Console.WriteLine(e);
+                try
+                {
+                    File.WriteAllText($"{path}/{one}", "[]");
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
             }
-        }
+
+}
 
     }
 }

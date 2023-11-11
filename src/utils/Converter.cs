@@ -16,7 +16,6 @@ namespace SFWAnimePic_API.NET.src.utils
         {
             ArrayList results = new ArrayList();
             ResponseDTO responseDTO = JsonConvert.DeserializeObject<ResponseDTO>(json);
-            Console.WriteLine(responseDTO.files[0]);
 
             return responseDTO;
         }
